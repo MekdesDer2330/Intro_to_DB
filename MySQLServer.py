@@ -17,6 +17,7 @@ try:
 
 except Error as e:
     print(f"Error while connecting to MySQL: {e}")
+except mysql.connector.Error
 
 finally:
     if 'cursor' in locals() and cursor:
